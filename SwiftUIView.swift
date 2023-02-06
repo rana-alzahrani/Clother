@@ -15,9 +15,28 @@ struct SwiftUIView: View {
     CLLocation(
         latitude: .init(floatLiteral: 24.704734),
         longitude: .init(floatLiteral: 46.685586))
+    @State var weather:Weather?
+    
+    func getWeather() async {
+        do {
+            weather = try await Task
+            {
+                try await WeatherService.shared.weather(for:Self.location)
+            }.value
+            
+        } catch {
+            fatalError("\(error)")
+        }
+    }
     
     var body: some View {
-        Text("Rana001")
+        if let weather = weather{
+            VStack {
+                Text("TemperatureToday").font(.largeTitle).padding()
+                Text(weather.currentWeather.condition.description).font(.title)
+                Image(systemName: weather.currentWeather.symbolName).font(.title)
+            }
+        }
     }
 }
 
