@@ -6,8 +6,16 @@
 //
 
 import SwiftUI
+import CoreLocation
+import WeatherKit
 
 struct SwiftUIView: View {
+    
+    static let location =
+    CLLocation(
+        latitude: .init(floatLiteral: 24.704734),
+        longitude: .init(floatLiteral: 46.685586))
+    
     var body: some View {
         Text("Rana001")
     }
