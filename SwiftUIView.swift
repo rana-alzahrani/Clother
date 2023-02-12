@@ -9,8 +9,14 @@ import SwiftUI
 
 struct SwiftUIView: View {
     var body: some View {
-        Text("Hana")
-        Text("Rana")
+        ZStack{
+          Color("background")
+                .edgesIgnoringSafeArea(.all)
+        
+            
+         //   Text("weather of the day")
+          //      .font(Font.custom("pro"))
+        }
     }
 }
 
