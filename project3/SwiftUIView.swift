@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
+//  SwiftUIView.swift
 //  project3
 //
-//  Created by Rana on 11/07/1444 AH.
+//  Created by rahaf on 24/07/1444 AH.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct SwiftUIVie: View {
     var body: some View {
         ZStack {
         Image("Im")
@@ -33,9 +33,11 @@ struct ContentView: View {
        
     }
 }
+    
 
-struct ContentView_Previews: PreviewProvider {
+struct SwiftUIVie_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        
+        SwiftUIVie()
     }
 }
