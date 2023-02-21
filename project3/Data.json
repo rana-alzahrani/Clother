@@ -11,8 +11,8 @@ import Foundation
 [
  {"fabric1 " : "fur" , "wool" , "Fleece" , "Naylon" , "colors1" : "000000" , "14213d" , "003049" , "403d39"},
  {"fabric2 " : "Wool" , "Naylon" , "Fur" , "Leather" , "colors2" : "33415c" , "33415c" , "33415c" , "16679a"},
- {"fabric3 " : "Velvet" , "Fleece" , "Cashmere" , "Down" , "colors3" : "" , "" , "" , ""},
- {"fabric4 " : "Polyster" , "Hemp" , "Cashmere" , "Fleece" , "colors4" : "" , "" , "" , ""},
+ {"fabric3 " : "Velvet" , "Fleece" , "Cashmere" , "Down" , "colors3" : "6e1423" , "2B3467" , "404258" , "2C3639"},
+ {"fabric4 " : "Polyster" , "Hemp" , "Cashmere" , "Fleece" , "colors4" : "4F091D" , "504658" , "003F5C" , "827081"},
  {"fabric5 " : "Polyster" , "Hemp" , "Denim" , "Cotton" , "colors5" : "3d0066" , "9d0610" , "582f0e" , "414833"},
  {"fabric6 " : "Cotton" , "Denim" , "Polyster" , "Rayon" , "colors6" : "805b10" , "8a7968" , "754043" , "a98360"},
  {"fabric7 " : "Cotton" , "Denim" , "Polyster" , "Rayon" , "colors7" : "d69c52" , "3e4c22" , "896279" , "6f1d1b"},
