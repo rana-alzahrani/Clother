@@ -1,0 +1,31 @@
+//
+//  data.swift
+//  project3
+//
+//  Created by Rana on 28/07/1444 AH.
+//
+
+import Foundation
+
+
+[
+ {"fabric1 " : "fur" , "wool" , "Fleece" , "Naylon" , "colors1" : "000000" , "14213d" , "003049" , "403d39"},
+ {"fabric2 " : "Wool" , "Naylon" , "Fur" , "Leather" , "colors2" : "33415c" , "33415c" , "33415c" , "16679a"},
+ {"fabric3 " : "Velvet" , "Fleece" , "Cashmere" , "Down" , "colors3" : "" , "" , "" , ""},
+ {"fabric4 " : "Polyster" , "Hemp" , "Cashmere" , "Fleece" , "colors4" : "" , "" , "" , ""},
+ {"fabric5 " : "Polyster" , "Hemp" , "Denim" , "Cotton" , "colors5" : "3d0066" , "9d0610" , "582f0e" , "414833"},
+ {"fabric6 " : "Cotton" , "Denim" , "Polyster" , "Rayon" , "colors6" : "805b10" , "8a7968" , "754043" , "a98360"},
+ {"fabric7 " : "Cotton" , "Denim" , "Polyster" , "Rayon" , "colors7" : "d69c52" , "3e4c22" , "896279" , "6f1d1b"},
+ {"fabric8 " : "Crepe" , "Cotton" , "Rayon" , "Satin" , "colors8" : "e27396" , "b892ff" , "899d78" , "679436"},
+ {"fabric9 " : "Linen" , "Chiffon" , "Crepe" , "silk" , "colors9" : "ffa69e" , "f79256" , "c6d4ff" , "a0dde6"},
+ {"fabric10 " : "Linen" , "Cotton" , "Silk" , "Chiffon" , "colors10" : "fdd85d" , "fffdf7" , "ff8000" , "b4ffff"}
+ 
+]
+
+
+
+
+
+
+
+
