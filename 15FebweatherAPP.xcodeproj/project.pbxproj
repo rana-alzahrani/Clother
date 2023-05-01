@@ -11,6 +11,8 @@
 		6AF65889299CE584001AC073 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF65888299CE584001AC073 /* ContentView.swift */; };
 		6AF6588B299CE585001AC073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AF6588A299CE585001AC073 /* Assets.xcassets */; };
 		6AF6588E299CE585001AC073 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AF6588D299CE585001AC073 /* Preview Assets.xcassets */; };
+		6AF65898299CFE6A001AC073 /* WeatherKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF65897299CFE6A001AC073 /* WeatherKitManager.swift */; };
+		6AF6589A299D1846001AC073 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF65899299D1846001AC073 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,9 @@
 		6AF65888299CE584001AC073 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6AF6588A299CE585001AC073 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AF6588D299CE585001AC073 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6AF65894299CE60F001AC073 /* 15FebweatherAPP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = 15FebweatherAPP.entitlements; sourceTree = "<group>"; };
+		6AF65897299CFE6A001AC073 /* WeatherKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherKitManager.swift; sourceTree = "<group>"; };
+		6AF65899299D1846001AC073 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +56,10 @@
 		6AF65885299CE584001AC073 /* 15FebweatherAPP */ = {
 			isa = PBXGroup;
 			children = (
+				6AF65896299CFE15001AC073 /* View */,
+				6AF65894299CE60F001AC073 /* 15FebweatherAPP.entitlements */,
 				6AF65886299CE584001AC073 /* _5FebweatherAPPApp.swift */,
-				6AF65888299CE584001AC073 /* ContentView.swift */,
+				6AF65895299CE655001AC073 /* Models */,
 				6AF6588A299CE585001AC073 /* Assets.xcassets */,
 				6AF6588C299CE585001AC073 /* Preview Content */,
 			);
@@ -65,6 +72,23 @@
 				6AF6588D299CE585001AC073 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6AF65895299CE655001AC073 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6AF65897299CFE6A001AC073 /* WeatherKitManager.swift */,
+				6AF65899299D1846001AC073 /* LocationManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6AF65896299CFE15001AC073 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6AF65888299CE584001AC073 /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +161,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AF6589A299D1846001AC073 /* LocationManager.swift in Sources */,
 				6AF65889299CE584001AC073 /* ContentView.swift in Sources */,
 				6AF65887299CE584001AC073 /* _5FebweatherAPPApp.swift in Sources */,
+				6AF65898299CFE6A001AC073 /* WeatherKitManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,12 +290,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = 15FebweatherAPP/15FebweatherAPP.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"15FebweatherAPP/Preview Content\"";
 				DEVELOPMENT_TEAM = 34LKH4B82B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "to get your current location weather";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -280,7 +308,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pro1.pro1.-5FebweatherAPP";
+				PRODUCT_BUNDLE_IDENTIFIER = com.domainname.clother;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -293,12 +321,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = 15FebweatherAPP/15FebweatherAPP.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"15FebweatherAPP/Preview Content\"";
 				DEVELOPMENT_TEAM = 34LKH4B82B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "to get your current location weather";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -309,7 +339,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pro1.pro1.-5FebweatherAPP";
+				PRODUCT_BUNDLE_IDENTIFIER = com.domainname.clother;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
